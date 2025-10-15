@@ -4,13 +4,9 @@ import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.Queue;
 
-public class UnDirectedGraph {
-    int size;
-    public ArrayList<ArrayList<Integer>> node;
+public class UnDirectedGraph extends Graph{
     public UnDirectedGraph(int size) {
-        this.size = size;
-        node = new ArrayList<>();
-        for(int i = 0; i <= size; i++) node.add(new ArrayList<>());
+        super(size);
     }
     public void link(int from, int to) {
         node.get(from).add(to);
