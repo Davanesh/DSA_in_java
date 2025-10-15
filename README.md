@@ -33,7 +33,7 @@ It’s great for:
 **Davanesh S**  
 > A passionate developer exploring the depths of full-stack development and problem-solving in Java.  
 
-📫 Connect with me on [LinkedIn](linkedin.com/in/davanesh-saminathan) or check out my [Portfolio](https://davanesh.vercel.app/)  
+📫 Connect with me on [LinkedIn](https://www.linkedin.com/in/davanesh-saminathan/) or check out my [Portfolio](https://davanesh.vercel.app/)  
 
 ---
 
