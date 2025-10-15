@@ -29,6 +29,13 @@ It’s great for:
 - Include **Time and Space Complexity** notes  
 - Add **Test cases and visual explanations**
 
+## 💻 My Problem-Solving Profiles
+Wanna see how I tackle real coding challenges? 👇  
+Check out my **LeetCode solutions** and progress here:  
+🔗 [LeetCode Profile](https://leetcode.com/u/davanesh/)
+
+*(More profiles coming soon — GFG, HackerRank, etc!)*
+
 ## 🧑‍💻 Author
 **Davanesh S**  
 > A passionate developer exploring the depths of full-stack development and problem-solving in Java.  
