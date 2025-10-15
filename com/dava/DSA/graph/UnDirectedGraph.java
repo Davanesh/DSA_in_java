@@ -8,10 +8,12 @@ public class UnDirectedGraph extends Graph{
     public UnDirectedGraph(int size) {
         super(size);
     }
+
     public void link(int from, int to) {
         node.get(from).add(to);
         node.get(to).add(from);
     }
+
     public void bfs(int start) {
         Queue<Integer> queue = new LinkedList<>();
         boolean[] visited = new boolean[size + 1];
@@ -28,6 +30,7 @@ public class UnDirectedGraph extends Graph{
             }
         }
     }
+
     public void dfs(int start) {
         boolean[] visited = new boolean[size + 1];
         dfsHelper(start, visited);
