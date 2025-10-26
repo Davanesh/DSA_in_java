@@ -1,8 +1,6 @@
 package com.dava.DSA.graph;
 
-import java.util.ArrayList;
-import java.util.LinkedList;
-import java.util.Queue;
+import java.util.*;
 
 public class UnDirectedGraph extends Graph{
     public UnDirectedGraph(int size) {
@@ -46,7 +44,6 @@ public class UnDirectedGraph extends Graph{
     }
 
     public boolean isCycleBFS(ArrayList<ArrayList<Integer>> graph) {
-        int size = graph.size();
         Queue<int[]> queue = new LinkedList<>();
         boolean[] visited = new boolean[size];
         for(int i = 0; i < size; i++) {
@@ -84,5 +81,22 @@ public class UnDirectedGraph extends Graph{
             }
         }
         return false;
+    }
+    // to find the shortest path from src to all the node if the distance between is 1(unit)
+    public int[] shortestUnitPath(int src) {
+        Queue<Integer> queue = new LinkedList<>();
+        int[] dist = new int[size];
+        Arrays.fill(dist, Integer.MAX_VALUE);
+        dist[src] = 0;
+        queue.offer(src);
+        while(!queue.isEmpty()) {
+            int cur = queue.poll();
+            for(int neig : node.get(cur)) {
+                if(dist[cur] + 1 < dist[neig]) {
+                    dist[neig] = dist[cur] + 1;
+                    queue.offer(neig);
+                }
+            }
+        }   return dist;
     }
 }
